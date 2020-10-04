@@ -1,0 +1,26 @@
+.main
+{
+    height: 100vh;
+
+    background-color: #eec5cc;
+}
+
+.container
+{
+    justify-content: space-between;
+
+    composes: container from '../../../src/common/style/container.module.css';
+}
+
+.greeting
+{
+    background-color: #f6f1f3;
+}
+
+.photo
+{
+    width: 300px;
+    height: 400px;
+
+    background-color: #bfbbbd;
+}

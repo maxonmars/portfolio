@@ -1,0 +1,13 @@
+.freelance
+{
+    height: 25vh;
+
+    background-color: #f8e9d0;
+}
+
+.container
+{
+    flex-direction: column;
+
+    composes: container from '../../../src/common/style/container.module.css';
+}

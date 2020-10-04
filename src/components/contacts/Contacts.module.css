@@ -1,0 +1,31 @@
+.contactBox
+{
+    height: 100vh;
+
+    background-color: #f1acac;
+}
+
+.container
+{
+    flex-direction: column;
+
+    composes: container from '../../../src/common/style/container.module.css';
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    max-height: 80%;
+
+    border: 1px solid;
+}
+
+textarea
+{
+    overflow: auto;
+
+    resize: vertical;
+}

@@ -1,0 +1,30 @@
+.skillBox
+{
+    min-height: 100vh;
+
+    background-color: #7ddb82;
+}
+
+.container
+{
+    flex-direction: column;
+    justify-content: flex-start;
+
+    composes: container from '../../../src/common/style/container.module.css';
+}
+
+.title
+{
+    background-color: #f6f1f3;
+}
+
+.skills
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+
+    border: 1px solid;
+}
