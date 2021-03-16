@@ -4,15 +4,17 @@ import {Work} from "./work/Work";
 
 export const Works = () => {
 
-    return <div className={style.worksBox}>
-        <div className={style.container}>
-            <h2>My Works</h2>
-            <div className={style.works}>
-                <Work title={"project-1"}
-                      description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cupiditate iure iusto minus nam necessitatibus nisi nulla quaerat quis sit."}/>
-                <Work title={"project-2"}
-                      description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, suscipit."}/>
+    return (
+        <div className={`${style.worksBox} section`}>
+            <div className={style.container}>
+                <h2>Мои проекты</h2>
+                <div className={style.works}>
+                    <Work title={"проект-1"}/>
+                    <Work title={"проект-2"}/>
+                    <Work title={"проект-3"}/>
+                    <Work title={"проект-4"}/>
+                </div>
             </div>
         </div>
-    </div>
+    )
 }

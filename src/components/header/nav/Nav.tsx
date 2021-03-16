@@ -3,10 +3,13 @@ import style from "./Nav.module.css"
 
 export const Nav = () => {
 
-    return <ul className={style.nav}>
-        <li>Home</li>
-        <li>Skill</li>
-        <li>Work</li>
-        <li>Contact</li>
-    </ul>
+    return (
+        <ul className={style.nav}>
+            <li><a href={'/#'}>главная</a></li>
+            <li><a href={'/#'}>обо мне</a></li>
+            <li><a href={'/#'}>навыки</a></li>
+            <li><a href={'/#'}>проекты</a></li>
+            <li><a href={'/#'}>контакты</a></li>
+        </ul>
+    )
 }

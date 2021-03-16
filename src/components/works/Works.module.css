@@ -1,16 +1,15 @@
 .worksBox
 {
-    min-height: 100vh;
-
-    background-color: #bdabe7;
 }
 
 .container
 {
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
+    width: 100%;
+    min-height: 10%;
+    padding: 0.625em 1.875em;
+    padding-top: 100px;
+    padding-bottom: 80px;
     composes: container from '../../../src/common/style/container.module.css';
 }
 
@@ -18,9 +17,13 @@
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
+}
 
-    border: 1px solid;
+@media screen and (min-width: 1125px) {
+    .works {
+        justify-content: space-between;
+    }
 }

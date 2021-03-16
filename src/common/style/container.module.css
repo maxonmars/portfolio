@@ -4,9 +4,10 @@
     align-items: center;
     flex-wrap: wrap;
 
-    width: 80%;
+    width: 81%;
     height: 100%;
     margin: 0 auto;
 
-    /*border: 1px solid;*/
+    padding-top: 100px;
+    padding-bottom: 80px;
 }

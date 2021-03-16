@@ -1,8 +1,7 @@
 .skillBox
 {
-    min-height: 100vh;
 
-    background-color: #7ddb82;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .container
@@ -15,16 +14,27 @@
 
 .title
 {
-    background-color: #f6f1f3;
 }
 
 .skills
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
 
-    border: 1px solid;
+    /*border: 1px solid;*/
+}
+
+@media screen and (min-width: 625px) {
+    .skills {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 938px) {
+    .skills {
+        justify-content: space-between;
+    }
 }

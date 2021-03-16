@@ -1,8 +1,6 @@
 .contactBox
 {
-    height: 100vh;
-
-    background-color: #f1acac;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .container
@@ -12,20 +10,48 @@
     composes: container from '../../../src/common/style/container.module.css';
 }
 
-.contacts
-{
+.formWrapper {
+    width: 49%;
+
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
-    width: 60%;
-    max-height: 80%;
+    background: #000000;
+    padding: 40px;
+    color: #ffffff;
+    font-size: 14px;
+}
 
-    border: 1px solid;
+.contactsForm
+{
+    width: 100%;
 }
 
 textarea
 {
     overflow: auto;
-
-    resize: vertical;
+color: #fff;
+    resize: none;
+    min-height: 100px;
 }
+
+.formContactsWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactsWrapper {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+

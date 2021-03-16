@@ -1,0 +1,58 @@
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    bottom: 40px;
+    /*left: 600px;*/
+    animation: shake .5s alternate infinite;
+    animation-timing-function: ease-in-out;
+
+    z-index: 100;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.vertical {
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.text {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.6em;
+    /*margin-bottom: -12px;*/
+    padding: 10px;
+}
+
+.arrows {
+
+}
+
+.arrow {
+
+
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(
+            -45deg
+    );
+    transform: rotate(
+            -45deg
+    );
+    margin-bottom: -8px;
+}

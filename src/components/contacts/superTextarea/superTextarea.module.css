@@ -1,0 +1,46 @@
+.inputContainer {
+    position: relative;
+    overflow: hidden;
+    padding-top: .6em;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.inputContainer textarea {
+    min-height: 150px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: .5em 1em .2em;
+    font-size: 1em;
+    color: #fff;
+    outline: none;
+}
+
+.inputContainer label {
+    display: inline-block;
+    max-width: 100%;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-family: "Montserrat";
+
+    transition: .3s ease-in-out;
+    position: absolute;
+    top: 1.4em;
+    left: 0;
+    font-size: .8em;
+    margin: 0;
+    margin-left: 1em;
+    font-weight: 400;
+}
+
+.inputContainer.field label,
+.inputContainer:hover label,
+.inputContainer:focus label {
+    top: 0;
+    font-size: .6em;
+}
