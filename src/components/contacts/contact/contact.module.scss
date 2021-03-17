@@ -1,0 +1,28 @@
+@import '../../../common/style/sass/variables';
+
+.contactWrapper {
+    display: flex;
+
+    margin-bottom: 20px;
+
+    .contactIconWrapper {
+        font-size: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+
+        background-color: $firstBgColor;
+    }
+
+    .contactText {
+        display: flex;
+        align-items: center;
+
+        color: #333;;
+    }
+}

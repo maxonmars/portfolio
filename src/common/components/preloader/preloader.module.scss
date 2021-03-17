@@ -1,53 +1,68 @@
+@import "../../../common/style/sass/variables";
+
 .loaderContainer {
-  position: fixed;
-  z-index: 10000;
-  background-color: #000000;
-  opacity: 1;
-  height: 100vh;
-  width: 100vw;
-  transition: all 1s ease-in-out;
+    position: fixed;
+    z-index: 10000;
+
+    width: 100vw;
+    height: 100vh;
+
+    transition: all 1s ease-in-out;
+
+    opacity: 1;
+    background-color: $firstBgColor;
 }
 
 .load {
-  opacity: 0;
-  visibility: hidden;
+    visibility: hidden;
+
+    opacity: 0;
 }
 
 .wrapper {
-  margin: 0 auto;
-  margin-top: calc((100vh - 75vmin) / 2);
-  overflow: hidden;
-  position: relative;
-  height: 75vmin;
-  width: 75vmin;
+    position: relative;
+
+    overflow: hidden;
+
+    width: 75vmin;
+    height: 75vmin;
+    margin: 0 auto;
+    margin-top: calc((100vh - 75vmin) / 2);
 }
 
-.ring{
-  height: 10%;
-  width: 10%;
-  border: 1vmin solid black;
-  border-radius: 100vmin;
-  position: absolute;
+.ring {
+    position: absolute;
+
+    width: 10%;
+    height: 10%;
+
+    border: 1vmin solid black;
+    border-radius: 100vmin;
 }
 
 $rings: 9;
 
 @for $i from 1 through $rings {
-  .ring_#{$i} {
-    height: #{percentage($i * (1 / $rings))};
-    width: #{percentage($i * (1 / $rings))};
-    top: #{percentage(0.5 - ($i * (1 / $rings) / 2))};
-    left: #{percentage(0.5 - ($i * (1 / $rings) / 2))};
-    border-color: white transparent transparent transparent;
-    animation: ringAnim #{$rings / $i}s infinite linear;
-    border-width: #{ $i * (4 / $rings)}vmin;
-  }
+    .ring_#{$i} {
+        top: #{percentage(.5 - ($i * (1 / $rings) / 2))};
+        left: #{percentage(.5 - ($i * (1 / $rings) / 2))};
+
+        width: #{percentage($i * (1 / $rings))};
+        height: #{percentage($i * (1 / $rings))};
+
+        animation: ringAnim #{$rings / $i}s infinite linear;
+
+        border-width: #{ $i * (4 / $rings)}vmin;
+        border-color: white transparent transparent transparent;
+    }
 
 
-  @keyframes ringAnim {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
+    @keyframes ringAnim {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
-

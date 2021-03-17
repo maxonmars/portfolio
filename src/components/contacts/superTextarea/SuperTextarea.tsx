@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import style from "./superTextarea.module.css";
+import style from "./superTextarea.module.scss";
 
 type PropsType = {
 	title: string

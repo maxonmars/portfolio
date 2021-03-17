@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './contact.module.css'
+import style from './contact.module.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 type PropsType = {

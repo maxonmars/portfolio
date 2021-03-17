@@ -1,0 +1,7 @@
+@import "../../../common/style/sass/variables";
+
+.text {
+  font-size: 4em;
+  z-index: 100;
+  color: $hoverTextColor;
+}

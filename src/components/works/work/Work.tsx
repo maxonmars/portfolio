@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Work.module.css"
+import style from "./Work.module.scss"
 
 type PropsType = {
     title: string
@@ -12,7 +12,7 @@ export const Work: React.FC<PropsType> = ({title}) => {
             <a href="/#" className={style.work}>
                 <span className={style.workItem}>{title}</span>
             </a>
-            <div className={style.workImg}></div>
+            <div className={style.workImg}/>
         </div>
     )
 }

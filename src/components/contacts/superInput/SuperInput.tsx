@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import style from "./superInput.module.css";
+import style from "./superInput.module.scss";
 
 type PropsType = {
 	title: string

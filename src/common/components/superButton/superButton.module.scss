@@ -1,0 +1,93 @@
+@import '../../../common/style/sass/variables';
+
+.btn {
+    font-family: $MainFont;
+    font-size: 10px;
+
+    position: relative;
+    z-index: 10;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+
+    padding: 15px 30px;
+
+    transition: all .5s cubic-bezier(1, .5, .8, 1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    outline: none;
+
+    &.focus,
+    &:focus,
+    &:hover {
+        text-decoration: none;
+
+        color: #333;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        width: 120%;
+        height: 120%;
+
+        content: '';
+        transition: all .5s ease-out;
+    }
+
+    &:before {
+        transform: translateX(-100%) rotate(45deg);
+    }
+
+    &:after {
+        -webkit-transform: translateX(100%) rotate(45deg);
+    }
+
+    &:hover:before {
+        -webkit-transform: translateX(-50%) rotate(45deg) scale(4);
+    }
+
+    &:hover:after {
+        -webkit-transform: translateX(50%) rotate(45deg) scale(4);
+    }
+
+    &.white:before,
+    &.white:after {
+        background: $defaultBgColor;
+    }
+
+    &.white:hover {
+        color: $defaultTextColor;
+    }
+
+    &.white {
+        color: $firstTextColor;
+        border-color: $firstTextColor;
+        background: transparent;
+    }
+
+    &.black {
+        color: $defaultTextColor;
+        border-color: $defaultTextColor;
+        background: transparent;
+    }
+
+    &.black:before,
+    &.black:after {
+        background: $firstBgColor;
+    }
+
+    &.black:hover {
+        color: $firstTextColor;
+    }
+}

@@ -1,15 +1,14 @@
 import React from "react";
-import style from "./Contacts.module.css"
+import style from "./Contacts.module.scss"
 import {SuperInput} from "./superInput/SuperInput";
 import {SuperTextarea} from "./superTextarea/SuperTextarea";
 import {SuperButton} from "../../common/components/superButton/SuperButton";
 import {Contact} from "./contact/Contact";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Contacts = () => {
 
     return (
-        <div className={`${style.contactBox} section`}>
+        <div className={style.contactBox}>
             <div className={style.container}>
                 <h2>Контакты</h2>
                 <div className={style.formContactsWrapper}>

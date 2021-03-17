@@ -1,0 +1,62 @@
+@import "../../common/style/sass/templates";
+@import "../../common/style/sass/variables";
+
+.contactBox {
+    background: rgba(0, 0, 0, .08);
+
+    .container {
+        flex-direction: column;
+
+        @extend %tplContainer;
+
+        .formContactsWrapper {
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+            padding-top: 30px;
+
+            .formWrapper {
+                font-size: 14px;
+
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                width: 49%;
+                padding: 40px;
+
+                color: $firstTextColor;
+                background: $firstBgColor;
+
+                .contactsForm {
+                    width: 100%;
+                }
+            }
+
+            .contactsWrapper {
+                display: flex;
+                flex-direction: column;
+
+                width: 32%;
+                margin-left: 30px;
+
+                & p {
+                    margin: 0;
+
+                }
+
+                .contacts {
+                    display: flex;
+                    flex-direction: column;
+
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

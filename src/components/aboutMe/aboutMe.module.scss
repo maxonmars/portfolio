@@ -1,0 +1,50 @@
+@import '../../common/style/sass/variables';
+@import '../../common/style/sass/templates';
+
+.aboutMe {
+    background: $firstTextColor;
+
+    .container {
+        flex-direction: column;
+
+        padding-top: 100px;
+        padding-bottom: 80px;
+
+        @extend %tplContainer;
+
+        .contentWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            .aboutText {
+                max-width: 49%;
+                .btnWrapper {
+                    margin-top: 20px;
+                }
+            }
+            .photo {
+                position: relative;
+
+                width: 235px;
+                height: 235px;
+
+                border-radius: 50%;
+                background: url('../../assets/photo/mainPhoto.jpg') no-repeat 50% 50%/cover;
+
+                &::before {
+                    position: absolute;
+
+                    width: 100%;
+                    height: 100%;
+
+                    content: '';
+
+                    border-radius: 50%;
+                    background-color: rgba(0,0,0,.3);
+                }
+            }
+        }
+    }
+}

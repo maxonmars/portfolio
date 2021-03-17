@@ -1,0 +1,22 @@
+@import '../../common/style/sass/templates';
+
+
+.container {
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 10%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @extend %tplContainer;
+
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+        padding-top: 30px;
+    }
+}

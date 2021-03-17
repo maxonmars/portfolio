@@ -1,0 +1,121 @@
+@import '../../../common/style/sass/variables';
+
+%skillBeforeAfter {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    content: '';
+    transition: all .3s ease-in-out;
+
+    border-width: 0;
+    border-style: solid;
+    border-color: $defaultTextColor;
+}
+
+%skillBeforeAfterHover {
+    width: 40px;
+    height: 40px;
+}
+
+%skill {
+    position: relative;
+
+    background-color: transparent;
+}
+
+.skill {
+    .outerSkill {
+        @extend %skill;
+
+        &::before,
+        &::after, {
+            @extend %skillBeforeAfter;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+
+            border-top-width: 1px;
+            border-left-width: 1px;
+        }
+
+        &::after {
+            top: 0;
+            right: 0;
+
+            border-top-width: 1px;
+            border-right-width: 1px;
+        }
+
+        &:hover::after,
+        &:hover::before {
+            @extend %skillBeforeAfterHover;
+        }
+
+        .innerSkill {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            width: 250px;
+            padding: 30px 10px;
+
+            @extend %skill;
+
+            &::before,
+            &::after {
+                @extend %skillBeforeAfter;
+            }
+
+            &::before {
+                bottom: 0;
+                left: 0;
+
+                border-bottom-width: 1px;
+                border-left-width: 1px;
+            }
+
+            &::after {
+                right: 0;
+                bottom: 0;
+
+                border-right-width: 1px;
+                border-bottom-width: 1px;
+            }
+
+            &:hover::after,
+            &:hover::before {
+                @extend %skillBeforeAfterHover;
+            }
+
+            & h3 {
+                font-size: 14px;
+                line-height: 2em;
+
+                letter-spacing: 3px;
+            }
+
+            & p {
+                text-align: center;
+
+                color: $secondTextColor;
+            }
+
+            .icon {
+                font-size: 60px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 60px;
+                height: 60px;
+
+                color: $secondTextColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '../../common/style/sass/templates';
+@import '../../common/style/sass/variables';
+
+.footer {
+    color: $firstTextColor;
+    background: $firstBgColor;
+
+    .container {
+        justify-content: space-between;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @extend %tplContainer;
+
+        .contacts {
+            font-size: 18px;
+
+            display: flex;
+            flex-direction: column;
+
+            & li {
+                display: flex;
+                align-items: center;
+
+                margin-bottom: 10px;
+
+                color: $hoverTextColor;
+            }
+
+            & span {
+                font-size: 12px;
+
+                margin-left: 15px;
+            }
+        }
+
+        .social {
+            font-size: 20px;
+
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            & li {
+                margin-left: 10px;
+            }
+
+            & li a {
+                transition: color .2s ease-in-out;
+
+                color: $hoverTextColor;
+            }
+
+            & li:hover a {
+                color: $secondTextColor;
+            }
+        }
+
+        .copyrights {
+            font-family: $MainFont;
+            font-size: 10px;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: $hoverTextColor;
+        }
+    }
+}

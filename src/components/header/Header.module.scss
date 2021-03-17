@@ -1,28 +1,27 @@
-@import "../../common/style/sass/variables";
+@import '../../common/style/sass/variables';
+@import '../../common/style/sass/templates';
 
-.header
-{
+.header {
     position: fixed;
     z-index: 1000;
+
     width: 100%;
+
     transition: background-color 1s ease-in-out;
-}
 
-.headerBlock {
-    background-color: transparent;
-}
+    &.headerBlock {
+        background-color: transparent;
+    }
+    &.headerBlock2 {
+        background-color: $firstBgColor;
+    }
+    .container {
+        justify-content: flex-end;
 
-.headerBlock2 {
-    background-color: $bgColor;
-}
+        width: 100%;
+        min-height: 10%;
+        padding: 10px 30px;
 
-.container
-{
-    /*display: flex;*/
-    /*align-items: center;*/
-    justify-content: flex-end;
-    width: 100%;
-    min-height: 10%;
-    padding: 0.625em 1.875em;
-    composes: container from '../../../src/common/style/container.module.css';
+        @extend %tplContainer;
+    }
 }

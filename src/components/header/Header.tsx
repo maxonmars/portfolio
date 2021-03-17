@@ -21,7 +21,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className={`${style.header} ${headerB} section`}>
+        <div className={`${style.header} ${headerB}`}>
             <div className={style.container}>
                 <Nav/>
             </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import style from "./Works.module.css"
+import style from "./Works.module.scss"
 import {Work} from "./work/Work";
 
 export const Works = () => {
 
     return (
-        <div className={`${style.worksBox} section`}>
+        <div className={style.worksBox}>
             <div className={style.container}>
                 <h2>Мои проекты</h2>
                 <div className={style.works}>

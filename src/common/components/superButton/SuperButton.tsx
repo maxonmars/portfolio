@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './superButton.module.css'
+import style from './superButton.module.scss'
 
 type PropsType = {
 	title: string

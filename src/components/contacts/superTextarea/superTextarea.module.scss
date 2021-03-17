@@ -1,0 +1,56 @@
+@import '../../../common/style/sass/variables';
+
+.inputContainer {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+    padding-top: .6em;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    & textarea {
+        font-size: 1em;
+
+        width: 100%;
+        min-height: 150px;
+        padding: .5em 1em .2em;
+
+        color: $firstTextColor;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    & label {
+        font-family: $MainFont;
+        font-size: .8em;
+        font-weight: 400;
+
+        position: absolute;
+        top: 1.4em;
+        left: 0;
+
+        display: inline-block;
+
+        max-width: 100%;
+        margin: 0;
+        margin-left: 1em;
+
+        transition: .3s ease-in-out;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, .6);
+    }
+
+    &.field label,
+    &:hover label,
+    &:focus label {
+        font-size: .6em;
+
+        top: 0;
+    }
+}
+
+
+

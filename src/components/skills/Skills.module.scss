@@ -1,0 +1,32 @@
+@import '../../common/style/sass/templates';
+
+.skillBox {
+    background: rgba(0, 0, 0, .08);
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        @extend %tplContainer;
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            width: 100%;
+            padding-top: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 625px) {
+    .skills {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 938px) {
+    .skills {
+        justify-content: space-between;
+    }
+}

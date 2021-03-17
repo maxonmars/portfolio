@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './arrow.module.css'
+import style from './arrow.module.scss'
 
 type PropsType = {
 	title: string
@@ -8,12 +8,12 @@ type PropsType = {
 export const Arrow: React.FC < PropsType > = ({title}) => {
 	return (
 		<div className={style.arrowContainer}>
-			<div className={style.vertical}></div>
+			<div className={style.vertical}/>
 			<div className={style.text}>{title}</div>
 			<div className={style.arrows}>
-				<div className={style.arrow}></div>
-				<div className={style.arrow}></div>
-				<div className={style.arrow}></div>
+				<div className={style.arrow}/>
+				<div className={style.arrow}/>
+				<div className={style.arrow}/>
 			</div>
 		</div>
 	);

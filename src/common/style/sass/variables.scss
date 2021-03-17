@@ -1,2 +1,13 @@
-$textColor: #fff;
-$bgColor: #000;
+// снять общие свойства макета в переменные
+
+$defaultTextColor: #000;
+$firstTextColor: #fff;
+$secondTextColor: #555;
+$hoverTextColor: #C9C9C9;
+
+$defaultBgColor: #fff;
+$firstBgColor: #000;
+$secondBgColor: #000;
+
+$MainFont: 'Montserrat Alternates', sans-serif;
+$SecondFont: 'Raleway', sans-serif;

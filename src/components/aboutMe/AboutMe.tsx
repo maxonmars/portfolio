@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './aboutMe.module.css'
+import style from './aboutMe.module.scss'
 import {SuperButton} from "../../common/components/superButton/SuperButton";
 
 type PropsType = {};
@@ -16,11 +16,11 @@ export const AboutMe: React.FC<PropsType> = ({}) => {
 							стека React, Redux, TypeScript.</p>
 						<p>В свободное время решаю задачи на Codewars. Готов рассмотреть ваши предложения по проектной
 							либо полной занятости, онлайн либо оффлайн.</p>
-						<SuperButton title={'скачать резюме'} color={'black'}/>
+						<div className={style.btnWrapper}>
+							<SuperButton title={'скачать резюме'} color={'black'}/>
+						</div>
 					</div>
-					<div>
-						<div className={style.photo}></div>
-					</div>
+					<div className={style.photo}/>
 				</div>
 			</div>
 		</div>
