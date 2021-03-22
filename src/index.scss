@@ -54,6 +54,9 @@ h2 {
   text-transform: uppercase;
 
   color: $defaultTextColor;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -68,6 +71,9 @@ h3 {
   text-transform: uppercase;
 
   color: $defaultTextColor;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 p {

@@ -1,7 +1,17 @@
 @import "../../../common/style/sass/variables";
 
 .text {
+  display: inline-block;
   font-size: 4em;
   z-index: 100;
   color: $hoverTextColor;
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
+  @media screen and (max-width: 410px) {
+    font-size: 1.8em;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 1.5em;
+  }
 }

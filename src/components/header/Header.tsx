@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Header.module.scss"
 import {Nav} from "./nav/Nav";
+import {BurgerNav} from "./burgerNav/BurgerNav";
 
 export const Header = () => {
 
@@ -24,6 +25,7 @@ export const Header = () => {
         <div className={`${style.header} ${headerB}`}>
             <div className={style.container}>
                 <Nav/>
+                <BurgerNav/>
             </div>
         </div>
     )

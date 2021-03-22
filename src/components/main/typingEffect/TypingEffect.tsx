@@ -6,11 +6,12 @@ export const ReactTypingEffectDemo = () => {
 	return (
 		<>
 			<ReactTypingEffect className={style.text}
-				text={["Hi There", "I am Max Kupriyanchuk", "A Frontend Developer"]}
+				text={["Максим", "Front-end разработчик"]}
+							   staticText={'Я'}
 				speed={50}
-				eraseDelay={200}
-				eraseSpeed={250}
-				typingDelay={100}
+				eraseDelay={3000}
+				eraseSpeed={50}
+				typingDelay={500}
 			/>
 		</>
 	);
